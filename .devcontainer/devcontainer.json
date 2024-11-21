@@ -31,5 +31,6 @@
         "streetsidesoftware.code-spell-checker"
       ]
     }
-  }
+  },
+  "postStartCommand": "bash -c 'code --list-extensions > /tmp/exts && cat /tmp/exts'"
 }
