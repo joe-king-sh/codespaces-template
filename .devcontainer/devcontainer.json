@@ -1,12 +1,6 @@
 {
   "name": "TypeScript Development",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
-  "workspaceFolder": "/workspace",
-  "forwardPorts": [3000],
-  "postCreateCommand": "npm install",
-  "mounts": [
-    "target=${containerWorkspaceFolder}/node_modules,source=ts-node-modules,type=volume"
-  ],
   "customizations": {
     "vscode": {
       "settings": {
@@ -32,5 +26,5 @@
       ]
     }
   },
-  "postStartCommand": "bash -c 'code --list-extensions > /tmp/exts && cat /tmp/exts'"
+  "postStartCommand": "bash -c 'echo Hello from the postStartCommand!'"
 }
