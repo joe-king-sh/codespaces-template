@@ -26,5 +26,5 @@
       ]
     }
   },
-  "postStartCommand": "bash -c 'echo Hello from the postStartCommand!'"
+  "postStartCommand": "bash .devcontainer/list-extensions.sh"
 }
