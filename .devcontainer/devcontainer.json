@@ -26,5 +26,5 @@
       ]
     }
   },
-  "postCreateCommand": "bash .devcontainer/list-extensions.sh"
+  "postStartCommand": "bash .devcontainer/list-extensions.sh"
 }
